@@ -76,9 +76,9 @@ export function RatiosTable({ ratios }: RatiosTableProps) {
               {formatRatioValue(ratio.value, ratio.unit)}
             </p>
           )}
-          <p className="ratio-cell__source" title={ratio.sourceConcepts.join(" + ")}>
-            <span>Filed tag</span>
-            <code>{ratio.sourceConcepts[0] ?? "Not available"}</code>
+          <p className="ratio-cell__source">
+            <span>Filed {ratio.sourceConcepts.length > 1 ? "tags" : "tag"}</span>
+            <code>{ratio.sourceConcepts.join(" + ") || "Not available"}</code>
           </p>
         </li>
       ))}

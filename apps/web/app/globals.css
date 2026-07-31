@@ -263,7 +263,7 @@ a {
 }
 
 .ticker-form input::placeholder {
-  color: #555a50;
+  color: #8b9184;
   opacity: 1;
 }
 
@@ -293,7 +293,7 @@ a {
 .ticker-form button:focus-visible,
 .source-trace summary:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--acid);
+  outline: 2px solid currentColor;
   outline-offset: 3px;
 }
 
@@ -539,6 +539,10 @@ a:focus-visible {
   animation: status-pulse 900ms ease-in-out infinite alternate;
 }
 
+.phase-status--refused {
+  color: var(--flag);
+}
+
 .ratios-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -619,14 +623,10 @@ a:focus-visible {
 }
 
 .ratio-cell__missing p {
-  display: -webkit-box;
   margin-top: 4px;
-  overflow: hidden;
   color: var(--ink-soft);
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.3;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .ratio-cell__source {
@@ -644,13 +644,11 @@ a:focus-visible {
 }
 
 .ratio-cell__source code {
-  overflow: hidden;
   font-family: inherit;
   font-size: 6px;
   letter-spacing: 0;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
   text-transform: none;
-  white-space: nowrap;
 }
 
 .ratio-empty {

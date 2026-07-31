@@ -16,9 +16,15 @@ export async function Signals({ ticker }: SignalsProps) {
           <p className="eyebrow">Phase 02 / grounded signal</p>
           <h2 id="signals-heading">What the filing is saying</h2>
         </div>
-        <p className="phase-status phase-status--done">
-          <span aria-hidden="true" /> Quotes verified
-        </p>
+        {result.ok ? (
+          <p className="phase-status phase-status--done">
+            <span aria-hidden="true" /> Quotes verified
+          </p>
+        ) : (
+          <p className="phase-status phase-status--refused">
+            <span aria-hidden="true" /> Extraction refused
+          </p>
+        )}
       </header>
       {result.ok ? (
         <SignalCards
