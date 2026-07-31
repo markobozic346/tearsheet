@@ -58,6 +58,37 @@ describe("computeRatios", () => {
     expect(revenueGrowth.period).toBe("FY2025");
   });
 
+  it("returns a noted null revenue growth when the prior fiscal year is missing", () => {
+    const factsWithGapYear = aaplFacts.filter(
+      (fact) => fact.concept !== REVENUE_CONCEPT || fact.end !== "2024-09-28",
+    );
+
+    const revenueGrowth = ratioById(computeRatios(factsWithGapYear), "revenue-growth");
+
+    expect(revenueGrowth.value).toBeNull();
+    expect(revenueGrowth.note).toBe(
+      `Revenue growth requires ${REVENUE_CONCEPT} or Revenues or SalesRevenueNet for two consecutive fiscal years.`,
+    );
+  });
+
+  it("describes zero revenue as belonging to the prior year", () => {
+    const factsWithZeroPriorRevenue: XbrlFact[] = aaplFacts.map((fact) =>
+      fact.concept === REVENUE_CONCEPT && fact.end === "2024-09-28"
+        ? { ...fact, value: 0 }
+        : fact,
+    );
+
+    const revenueGrowth = ratioById(
+      computeRatios(factsWithZeroPriorRevenue),
+      "revenue-growth",
+    );
+
+    expect(revenueGrowth.value).toBeNull();
+    expect(revenueGrowth.note).toBe(
+      "Prior-year revenue is zero, so revenue growth cannot be calculated.",
+    );
+  });
+
   it("returns a noted null gross margin when cost of revenue is missing", () => {
     const factsWithoutCost = aaplFacts.filter((fact) => fact.concept !== COST_CONCEPT);
 

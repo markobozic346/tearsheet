@@ -13,6 +13,9 @@ const OPERATING_CASH_FLOW_CONCEPTS = [
 ] as const;
 const LIABILITIES_CONCEPTS = ["Liabilities"] as const;
 const ASSETS_CONCEPTS = ["Assets"] as const;
+const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
+const MIN_FISCAL_YEAR_DAYS = 250;
+const MAX_FISCAL_YEAR_DAYS = 400;
 
 type FactContext = {
   fiscalYear: number;
@@ -174,11 +177,26 @@ function latestFiscalYear(facts: XbrlFact[]): number | null {
   return fiscalYear;
 }
 
+function isImmediatelyPriorFiscalYearEnd(currentEnd: string, priorEnd: string): boolean {
+  const daysBeforeCurrentEnd =
+    (Date.parse(currentEnd) - Date.parse(priorEnd)) / MILLISECONDS_PER_DAY;
+
+  return (
+    Number.isFinite(daysBeforeCurrentEnd) &&
+    daysBeforeCurrentEnd >= MIN_FISCAL_YEAR_DAYS &&
+    daysBeforeCurrentEnd <= MAX_FISCAL_YEAR_DAYS
+  );
+}
+
+function consecutiveRevenueYearsNote(): string {
+  return `Revenue growth requires ${REVENUE_CONCEPTS.join(" or ")} for two consecutive fiscal years.`;
+}
+
 function resolvePriorRevenue(facts: XbrlFact[], current: FactContext | null): Resolution {
   if (!current) {
     return {
       ok: false,
-      note: "Revenue growth requires revenue for two fiscal years.",
+      note: consecutiveRevenueYearsNote(),
       sourceConcepts: [],
     };
   }
@@ -186,7 +204,7 @@ function resolvePriorRevenue(facts: XbrlFact[], current: FactContext | null): Re
   const priorRevenueFacts = facts.filter(
     (fact) =>
       REVENUE_CONCEPTS.some((concept) => concept === fact.concept) &&
-      fact.end < current.end,
+      isImmediatelyPriorFiscalYearEnd(current.end, fact.end),
   );
   const latestFilingComparatives = priorRevenueFacts.filter(
     (fact) => fact.fiscalYear === current.fiscalYear,
@@ -198,7 +216,7 @@ function resolvePriorRevenue(facts: XbrlFact[], current: FactContext | null): Re
   if (!end) {
     return {
       ok: false,
-      note: `Revenue growth requires ${REVENUE_CONCEPTS.join(" or ")} for two fiscal years.`,
+      note: consecutiveRevenueYearsNote(),
       sourceConcepts: [],
     };
   }
@@ -208,7 +226,7 @@ function resolvePriorRevenue(facts: XbrlFact[], current: FactContext | null): Re
   if (fiscalYear === null) {
     return {
       ok: false,
-      note: `Revenue growth requires ${REVENUE_CONCEPTS.join(" or ")} for two fiscal years.`,
+      note: consecutiveRevenueYearsNote(),
       sourceConcepts: [],
     };
   }
@@ -310,7 +328,7 @@ export function computeRatios(facts: XbrlFact[]): Ratio[] {
       unit: "percent",
       period,
       sourceConcepts: revenueGrowthSources,
-      note: `Prior-year revenue is zero for ${period}, so revenue growth cannot be calculated.`,
+      note: "Prior-year revenue is zero, so revenue growth cannot be calculated.",
     };
   } else {
     revenueGrowth = {
