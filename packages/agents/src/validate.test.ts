@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import fixture from "../../../fixtures/aapl-10k-sections.json" with { type: "json" };
 
-import { validateQuotes } from "./validate.js";
+import { validateQuotes } from "./validate";
 
 const riskFixture = fixture.sections.find(({ id }) => id === "risk-factors");
 const mdnaFixture = fixture.sections.find(({ id }) => id === "mdna");

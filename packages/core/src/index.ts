@@ -1,2 +1,2 @@
-export { computeRatios } from "./ratios.js";
-export * from "./types.js";
+export { computeRatios } from "./ratios";
+export * from "./types";

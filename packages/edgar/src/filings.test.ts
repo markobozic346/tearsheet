@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { type RecentFilings, selectLatestTenK } from "./filings.js";
-import { findCompany, padCik } from "./tickers.js";
+import { type RecentFilings, selectLatestTenK } from "./filings";
+import { findCompany, padCik } from "./tickers";
 
 function recent(
   rows: { form: string; accession?: string; doc?: string }[],

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { extractAnnualFacts } from "./facts.js";
+import { extractAnnualFacts } from "./facts";
 
 type Entry = {
   start?: string;

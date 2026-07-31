@@ -26,7 +26,7 @@ export default function Home() {
         </p>
         <TickerForm />
         <p className="landing__hint" id="ticker-hint">
-          Preview data is available for <strong>AAPL</strong>.
+          Works for any US-listed 10-K filer — try <strong>AAPL</strong>.
         </p>
       </section>
 

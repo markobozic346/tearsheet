@@ -3,9 +3,9 @@ import { ok, type Result, refuse, type Section, type Signal } from "@repo/core";
 import { generateObject } from "ai";
 import { z } from "zod";
 
-import { validateQuotes } from "./validate.js";
+import { validateQuotes } from "./validate";
 
-export { validateQuotes } from "./validate.js";
+export { validateQuotes } from "./validate";
 
 const MAX_SECTION_CHARACTERS = 250_000;
 

@@ -135,11 +135,16 @@ Then open the app and enter a ticker.
 
 ## Status
 
-A focused prototype, under active construction.
+Shipped and live. Enter a ticker and the deployed app serves a real tearsheet:
+deterministic ratios computed from SEC XBRL facts render first, then grounded signals —
+each validated verbatim against the filing text — stream in behind a Suspense boundary.
+Filers without a 10-K (20-F/40-F filers, funds), without XBRL facts, or whose sections
+can't be confidently located get a specific refusal sentence instead of a page.
 
-The contracts are settled: `packages/core/src/types.ts` holds the frozen domain types —
-including a `Result<T>` that makes refusal a first-class outcome — and every other package
-is built against them. Work is tracked in [issues](../../issues), one per package.
+The contracts held: `packages/core/src/types.ts` — including a `Result<T>` that makes
+refusal a first-class outcome — was frozen while four packages were built against it in
+parallel, and the final integration was a thin composition in `apps/web/lib/data.ts`.
 
-Not built, and deliberately out of scope for the first pass: token-level streaming of
-signals, multi-company comparison, and earnings-call transcript ingestion.
+Not built, and deliberately out of scope for the first pass: token-level `streamObject`
+streaming of individual signals (the page renders progressively, but signals arrive as
+one validated batch), multi-company comparison, and earnings-call transcript ingestion.

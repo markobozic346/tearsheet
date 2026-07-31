@@ -43,6 +43,8 @@ function throttled<T>(fn: () => Promise<T>): Promise<T> {
 function cacheRoot(): string {
   const override = process.env.EDGAR_CACHE_DIR;
   if (override) return override;
+  // Serverless filesystems are read-only outside the scratch dir.
+  if (process.env.VERCEL) return "/tmp/.edgar-cache";
   // Walk up to the workspace root so every package shares one cache.
   let dir = process.cwd();
   while (true) {
@@ -89,8 +91,12 @@ export async function fetchSec(url: string, cache: CachePolicy): Promise<FetchOu
   });
 
   if (outcome.kind === "ok") {
-    await mkdir(path.dirname(file), { recursive: true });
-    await writeFile(file, outcome.body, "utf8");
+    try {
+      await mkdir(path.dirname(file), { recursive: true });
+      await writeFile(file, outcome.body, "utf8");
+    } catch {
+      // Caching is best-effort; an unwritable disk must not fail the fetch.
+    }
     return outcome;
   }
 

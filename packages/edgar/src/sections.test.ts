@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { htmlToText } from "./html.js";
-import { locateSections } from "./sections.js";
+import { htmlToText } from "./html";
+import { locateSections } from "./sections";
 
 /** Deterministic filler prose: ~150 chars per sentence, no "Item" tokens. */
 function prose(topic: string, sentences: number): string {
