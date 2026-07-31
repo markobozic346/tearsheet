@@ -1,5 +1,5 @@
 import { anthropic } from "@ai-sdk/anthropic";
-import { ok, type Result, type Section, type Signal } from "@repo/core";
+import { ok, type Result, refuse, type Section, type Signal } from "@repo/core";
 import { generateObject } from "ai";
 import { z } from "zod";
 
@@ -60,14 +60,22 @@ export async function extractSignals(sections: Section[]): Promise<Result<Signal
     return ok([]);
   }
 
-  const { object } = await generateObject({
-    model: anthropic("claude-sonnet-5"),
-    schema: ExtractionSchema,
-    schemaName: "grounded_signals",
-    schemaDescription:
-      "An object whose signals field is an array of grounded signal objects.",
-    prompt: buildPrompt(sections),
-  });
+  try {
+    const { object } = await generateObject({
+      model: anthropic("claude-sonnet-5"),
+      schema: ExtractionSchema,
+      schemaName: "grounded_signals",
+      schemaDescription:
+        "An object whose signals field is an array of grounded signal objects.",
+      prompt: buildPrompt(sections),
+    });
 
-  return ok(validateQuotes(object.signals, sections));
+    return ok(validateQuotes(object.signals, sections));
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    return refuse(
+      "fetch-failed",
+      `The signal extraction model call failed (${detail}), so no signals are shown rather than unverified ones.`,
+    );
+  }
 }
