@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
 import aaplFacts from "../../../fixtures/aapl-companyfacts.json" with { type: "json" };
-import { computeRatios } from "./ratios.js";
-import type { Ratio, RatioId, XbrlFact } from "./types.js";
+import { computeRatios } from "./ratios";
+import type { Ratio, RatioId, XbrlFact } from "./types";
 
 const REVENUE_CONCEPT = "RevenueFromContractWithCustomerExcludingAssessedTax";
 const COST_CONCEPT = "CostOfGoodsAndServicesSold";

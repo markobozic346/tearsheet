@@ -1,6 +1,6 @@
 import type { Company, Result, Ticker } from "@repo/core";
 import { ok, refuse } from "@repo/core";
-import { DAY_MS, fetchRefusal, fetchSec } from "./http.js";
+import { DAY_MS, fetchRefusal, fetchSec } from "./http";
 
 const TICKERS_URL = "https://www.sec.gov/files/company_tickers.json";
 

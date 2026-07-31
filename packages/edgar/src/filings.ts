@@ -1,6 +1,6 @@
 import type { Cik, FilingRef, Result } from "@repo/core";
 import { ok, refuse } from "@repo/core";
-import { DAY_MS, fetchRefusal, fetchSec } from "./http.js";
+import { DAY_MS, fetchRefusal, fetchSec } from "./http";
 
 /** Column arrays from `submissions/CIK{cik}.json` → `filings.recent`, newest first. */
 export type RecentFilings = {

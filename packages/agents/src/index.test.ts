@@ -1,7 +1,7 @@
 import type { Section } from "@repo/core";
 import { expect, it, vi } from "vitest";
 
-import { extractSignals } from "./index.js";
+import { extractSignals } from "./index";
 
 vi.mock("ai", () => ({
   generateObject: vi.fn(() => Promise.reject(new Error("model unavailable"))),

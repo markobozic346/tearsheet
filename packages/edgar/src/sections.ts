@@ -1,7 +1,7 @@
 import type { FilingRef, Result, Section, SectionId } from "@repo/core";
 import { ok, refuse } from "@repo/core";
-import { htmlToText } from "./html.js";
-import { fetchRefusal, fetchSec } from "./http.js";
+import { htmlToText } from "./html";
+import { fetchRefusal, fetchSec } from "./http";
 
 /**
  * Locating "Item 1A" / "Item 7" in a 10-K is the part that varies wildly by

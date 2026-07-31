@@ -1,6 +1,6 @@
 import type { Cik, Result, XbrlFact } from "@repo/core";
 import { ok, refuse } from "@repo/core";
-import { DAY_MS, fetchRefusal, fetchSec } from "./http.js";
+import { DAY_MS, fetchRefusal, fetchSec } from "./http";
 
 /**
  * XBRL tags vary by filer, so each concept resolves through an ordered fallback

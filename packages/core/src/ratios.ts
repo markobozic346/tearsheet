@@ -1,4 +1,4 @@
-import type { Ratio, RatioId, RatioUnit, XbrlFact } from "./types.js";
+import type { Ratio, RatioId, RatioUnit, XbrlFact } from "./types";
 
 const REVENUE_CONCEPTS = [
   "RevenueFromContractWithCustomerExcludingAssessedTax",

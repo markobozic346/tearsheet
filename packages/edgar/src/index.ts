@@ -1,4 +1,4 @@
-export { getXbrlFacts } from "./facts.js";
-export { getLatestFiling } from "./filings.js";
-export { getSections } from "./sections.js";
-export { resolveTicker } from "./tickers.js";
+export { getXbrlFacts } from "./facts";
+export { getLatestFiling } from "./filings";
+export { getSections } from "./sections";
+export { resolveTicker } from "./tickers";

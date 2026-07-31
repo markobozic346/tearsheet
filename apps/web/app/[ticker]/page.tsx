@@ -8,6 +8,13 @@ import { Signals } from "../../components/signals";
 import { TickerForm } from "../../components/ticker-form";
 import { getRatios } from "../../lib/data";
 
+/**
+ * Signal extraction reads two 10-K sections through a model and can take
+ * 20–40s on top of SEC fetches; the default function window cuts the stream
+ * short.
+ */
+export const maxDuration = 300;
+
 type TearsheetPageProps = {
   params: Promise<{ ticker: string }>;
 };
