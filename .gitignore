@@ -1,0 +1,39 @@
+# --- Local-only planning / prep (do NOT push) ---
+IDEA.md
+
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.js
+
+# --- Build output ---
+dist/
+build/
+.next/
+out/
+.turbo/
+
+# --- Env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- SEC EDGAR local cache (regenerable) ---
+.cache/
+**/.edgar-cache/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Test / coverage ---
+coverage/
+
+# --- Editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp

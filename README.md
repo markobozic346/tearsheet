@@ -61,7 +61,8 @@ tearsheet/
 │   ├── edgar/            typed SEC client: CIK resolve, filings, XBRL facts,
 │   │                     section extraction, on-disk cache, rate limiting
 │   ├── core/             domain types + ratio calculators (pure, deterministic, tested)
-│   └── agents/           Mastra — the "signal extractor" agent + workflow
+│   └── agents/           the "signal extractor": AI SDK generateObject +
+│                         Zod schema, quotes validated against source
 └── turbo.json
 ```
 
@@ -69,8 +70,8 @@ tearsheet/
 `core` depends on nothing — it's pure logic and the easy-to-test heart of the system.
 
 The package boundary around `agents` is intentional: agent runs are long, bursty, and
-cost-sensitive, so in production it lifts cleanly into a standalone Mastra service with its
-own process and scaling. Today it's called in-process for simplicity; the seam is already
+cost-sensitive, so in production it lifts cleanly into a standalone service with its own
+process and scaling. Today it's called in-process for simplicity; the seam is already
 where the future service split goes.
 
 ### The ratios (`packages/core`)
@@ -104,6 +105,13 @@ type Signal = {
 };
 ```
 
+Extraction is a single structured-output call — `generateObject` from the AI SDK, with the
+schema above as a Zod type, so the model can only return shapes the system already
+understands. The `quote` field is then checked verbatim against the source section in plain
+TypeScript, and any item whose quote can't be found is dropped before it ever reaches the
+UI. That check is a pure function, and it's the part covered by tests — the trust boundary
+is code, not the prompt.
+
 ---
 
 ## Getting started
@@ -127,6 +135,11 @@ Then open the app and enter a ticker.
 
 ## Status
 
-A focused prototype. The core loop — ticker → filings → deterministic ratios → grounded
-signal with click-to-source — works end to end. Streaming, multi-company comparison, and
-earnings-call transcript ingestion are natural next steps, not yet built.
+A focused prototype, under active construction.
+
+The contracts are settled: `packages/core/src/types.ts` holds the frozen domain types —
+including a `Result<T>` that makes refusal a first-class outcome — and every other package
+is built against them. Work is tracked in [issues](../../issues), one per package.
+
+Not built, and deliberately out of scope for the first pass: token-level streaming of
+signals, multi-company comparison, and earnings-call transcript ingestion.

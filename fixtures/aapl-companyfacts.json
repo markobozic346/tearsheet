@@ -1,0 +1,758 @@
+[
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 274515000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2020-09-26",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 365817000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 365817000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 394328000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 394328000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 394328000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 416161000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 169559000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2020-09-26",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 212981000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 212981000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 223546000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 223546000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 223546000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 214137000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 214137000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 214137000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 210352000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 210352000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 220960000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 57411000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2020-09-26",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 94680000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 94680000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 99803000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 99803000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 99803000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 96995000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 96995000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 96995000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 93736000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 93736000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetIncomeLoss",
+    "value": 112010000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 66288000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2020-09-26",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 108949000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 108949000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 119437000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 119437000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 119437000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 114301000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 114301000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 114301000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "OperatingIncomeLoss",
+    "value": 133050000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 34940000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 23646000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 23646000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29965000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29965000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29943000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29943000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 35934000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 80674000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2020-09-26",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 104038000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 104038000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 122151000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 122151000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 122151000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 110543000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 110543000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 110543000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 118254000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 118254000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 111482000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 287912000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 302083000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 302083000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 290437000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 290437000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 308030000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 308030000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "Liabilities",
+    "value": 285508000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 351002000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2021-09-25",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 352755000000,
+    "unit": "USD",
+    "fiscalYear": 2022,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 352755000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2022-09-24",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 352583000000,
+    "unit": "USD",
+    "fiscalYear": 2023,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 352583000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2023-09-30",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 364980000000,
+    "unit": "USD",
+    "fiscalYear": 2024,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 364980000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2024-09-28",
+    "form": "10-K"
+  },
+  {
+    "concept": "Assets",
+    "value": 359241000000,
+    "unit": "USD",
+    "fiscalYear": 2025,
+    "fiscalPeriod": "FY",
+    "end": "2025-09-27",
+    "form": "10-K"
+  }
+]

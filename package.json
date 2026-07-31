@@ -1,0 +1,24 @@
+{
+  "name": "tearsheet",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "check-types": "turbo run check-types",
+    "lint": "biome check --write .",
+    "lint:ci": "biome ci .",
+    "format": "biome format --write .",
+    "check": "pnpm lint:ci && pnpm check-types && pnpm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
+    "turbo": "^2.10.7",
+    "typescript": "5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
