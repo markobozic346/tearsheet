@@ -22,10 +22,13 @@ export const CONCEPT_FALLBACKS: readonly (readonly string[])[] = [
 const ANNUAL_FORMS = new Set(["10-K", "10-K/A"]);
 
 /**
- * A 10-K also tags Q4 durations with `fp: "FY"`; a real annual period spans the
- * year. Instant concepts (balance-sheet items) have no `start` and always pass.
+ * A 10-K also tags Q4 durations with `fp: "FY"`, and some filers tag multi-year
+ * cumulative durations the same way; a real annual period spans roughly one
+ * year (52/53 weeks). Instant concepts (balance-sheet items) have no `start`
+ * and always pass.
  */
 const MIN_ANNUAL_DURATION_DAYS = 300;
+const MAX_ANNUAL_DURATION_DAYS = 400;
 
 function asRecord(value: unknown): Record<string, unknown> | undefined {
   return typeof value === "object" && value !== null
@@ -48,7 +51,9 @@ function collectConcept(conceptNode: unknown, concept: string): XbrlFact[] {
       if (typeof end !== "string") continue;
       if (typeof start === "string") {
         const days = (Date.parse(end) - Date.parse(start)) / (24 * 60 * 60 * 1000);
-        if (!(days >= MIN_ANNUAL_DURATION_DAYS)) continue;
+        if (!(days >= MIN_ANNUAL_DURATION_DAYS && days <= MAX_ANNUAL_DURATION_DAYS)) {
+          continue;
+        }
       }
       out.push({
         concept,

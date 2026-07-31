@@ -67,6 +67,22 @@ describe("extractAnnualFacts", () => {
     expect(facts[0]?.fiscalYear).toBe(2024);
   });
 
+  it("drops a multi-year cumulative duration tagged fp:FY", () => {
+    const cumulative: Entry = {
+      start: "2022-10-01",
+      end: "2024-09-30",
+      val: 300,
+      fy: 2024,
+      fp: "FY",
+      form: "10-K",
+    };
+    const facts = extractAnnualFacts(
+      companyfacts({ Revenues: [cumulative, fy(2024, 100)] }),
+    );
+    expect(facts).toHaveLength(1);
+    expect(facts[0]?.value).toBe(100);
+  });
+
   it("keeps instant (balance-sheet) facts, which have no start date", () => {
     const instant: Entry = {
       end: "2024-09-30",
