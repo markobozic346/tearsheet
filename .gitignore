@@ -14,8 +14,9 @@ out/
 .turbo/
 
 # --- Env & secrets ---
-.env
-.env.*
+# `.env*` is kept here on purpose: `vercel env pull` appends it if absent, and an
+# appended copy would land after the negation below and re-ignore .env.example.
+.env*
 !.env.example
 
 # --- SEC EDGAR local cache (regenerable) ---
