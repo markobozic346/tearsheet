@@ -14,6 +14,10 @@ vi.mock("@repo/agents", () => ({
   extractSignals: vi.fn(),
 }));
 
+vi.mock("next/cache", () => ({
+  unstable_cache: <T extends (...args: never[]) => unknown>(fn: T) => fn,
+}));
+
 const edgar = vi.mocked(await import("@repo/edgar"));
 const agents = vi.mocked(await import("@repo/agents"));
 

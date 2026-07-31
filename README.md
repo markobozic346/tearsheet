@@ -2,6 +2,9 @@
 
 > A 10-K in one glance — every number auditable, every claim traceable to the source.
 
+**Live demo: [tearsheet-chi.vercel.app](https://tearsheet-chi.vercel.app)** — try `AAPL`, or `SHEL` to see a refusal.
+[![CI](https://github.com/markobozic346/tearsheet/actions/workflows/ci.yml/badge.svg)](https://github.com/markobozic346/tearsheet/actions/workflows/ci.yml)
+
 Enter a ticker and get a one-page briefing on the company: the key financial ratios,
 computed exactly from official SEC filings, alongside AI-extracted "signal" from the
 qualitative sections of the 10-K — where **every claim links back to the exact paragraph
@@ -45,7 +48,9 @@ and staying under ~10 req/s.
 | full filing text | `https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/{doc}` |
 
 Filings are immutable once filed, so responses are cached to disk — the app never hits the
-network for data it has already seen.
+network for data it has already seen. The same immutability caches the generative phase:
+extracted signals are stored per accession number, so the model reads a given filing once,
+not once per pageview.
 
 ---
 
